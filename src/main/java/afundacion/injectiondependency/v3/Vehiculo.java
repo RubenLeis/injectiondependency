@@ -6,7 +6,10 @@ public class Vehiculo
 
 	private String matricula;
 	private String modelo;
-    private Motor motor;
+
+
+
+	private Motor motor;
  
     public Vehiculo(String matricula, String modelo, Motor motor)
     {
@@ -14,7 +17,15 @@ public class Vehiculo
     	this.modelo = modelo;
         this.motor = motor;
     }
-    
+
+	public Motor getMotor() {
+		return motor;
+	}
+
+	public void setMotor(Motor motor) {
+		this.motor = motor;
+	}
+
     public String getModelo() {
 		return modelo + " " + motor.getNombre();
 	}
