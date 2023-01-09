@@ -1,6 +1,6 @@
 package afundacion.injectiondependency.v3;
 
-public interface IMotor
+public interface Motor
 {
 	public int getConsumo();
 	public String getNombre();

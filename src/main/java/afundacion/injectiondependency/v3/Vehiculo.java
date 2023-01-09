@@ -6,9 +6,9 @@ public class Vehiculo
 
 	private String matricula;
 	private String modelo;
-    private IMotor motor;
+    private Motor motor;
  
-    public Vehiculo(String matricula, String modelo, IMotor motor)
+    public Vehiculo(String matricula, String modelo, Motor motor)
     {
     	this.setMatricula(matricula);
     	this.modelo = modelo;

@@ -2,10 +2,13 @@ package afundacion.injectiondependency.v2;
 
 public class Motor
 {
+
+	private String tipo;
 	private int consumo;
 	
-    public Motor(int consumo) {
+    public Motor(String tipo,int consumo) {
 		super();
+		this.tipo = tipo;
 		this.consumo = consumo;
 	}
 
@@ -16,8 +19,10 @@ public class Motor
 
 	@Override
 	public String toString() {
-		return "Motor [consumo=" + consumo + "]";
+		return "Motor{" +
+				"tipo='" + tipo + '\'' +
+				", consumo=" + consumo +
+				'}';
 	}
-	
 }
 

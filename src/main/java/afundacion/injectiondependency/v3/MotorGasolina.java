@@ -1,6 +1,6 @@
 package afundacion.injectiondependency.v3;
 
-public class MotorGasolina implements IMotor{
+public class MotorGasolina implements Motor {
 
 
 	public int getConsumo() {

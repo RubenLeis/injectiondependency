@@ -11,9 +11,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        Vehiculo v1 = VehiculoFactory.Create("1", "Ford Fiesta", TipoMotor.MOTOR_DIESEL);
-        Vehiculo v2 = VehiculoFactory.Create("2", "Citroen Saxo", TipoMotor.MOTOR_DIESEL);
-        Vehiculo v3 = VehiculoFactory.Create("3", "Ford Fiesta", TipoMotor.MOTOR_GASOLINA);
+        Vehiculo v1 = new Vehiculo("1", "Ford Fiesta", MotorFactory.create(TipoMotor.MOTOR_DIESEL));
+        Vehiculo v2 = new Vehiculo("2", "Citroen Saxo", MotorFactory.create(TipoMotor.MOTOR_DIESEL));
+        Vehiculo v3 = new Vehiculo("3", "Ford Fiesta", MotorFactory.create(TipoMotor.MOTOR_GASOLINA));
 
         List<Vehiculo> vs = new ArrayList<Vehiculo>();
         vs.add(v1);
@@ -25,6 +25,6 @@ public class App
         }
         
         // este caso no refleja la realidad de los motores, realmente muchos vehiculos, admiten los tipos mas habituales de motor: diesel, gasolina, gasoleo...
-        // Podemos ayudarnos de algun patro de diseño creacional https://www.tutorialspoint.com/design_pattern
+        // Podemos ayudarnos de algun patron de diseño creacional https://www.tutorialspoint.com/design_pattern
     }
 }

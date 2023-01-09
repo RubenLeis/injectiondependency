@@ -11,8 +11,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        Motor motorDiesel = new Motor(5);
-        Motor motorGasolina = new Motor(6);
+        Motor motorDiesel = new Motor("diesel",5);
+        Motor motorGasolina = new Motor("galosina",6);
     	
         Vehiculo v1 = new Vehiculo("1","Ford Fiesta Diesel", motorDiesel);
         Vehiculo v2 = new Vehiculo("2","Citroen Saxo Diesel", motorDiesel);
